@@ -4,6 +4,10 @@
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
+.site-footer .container {
+  position: relative;
+}
+
 .site-footer a {
   color: #fff;
   text-decoration: none;
@@ -13,6 +17,32 @@
   color: var(--accent);
 }
 
+.logoimg {
+  position: absolute;
+  right: 12px;
+  bottom: 45px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.logoimg h6 {
+  font-size: 12px;
+  margin: 0 0 6px 0;
+  color: #ccc;
+}
+
+.logoimg img {
+  width: 120px;
+  height: auto;
+}
+
+.footer-address {
+  text-align: center;
+}
+
+
 @media (max-width: 767px) {
   .site-footer {
     text-align: center;
@@ -20,5 +50,12 @@
 
   .site-footer .text-md-end {
     text-align: center !important;
+  }
+
+  .logoimg {
+    position: static;
+    margin-top: 8px;
+    align-items: center;
+    text-align: center;
   }
 }

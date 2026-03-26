@@ -39,10 +39,6 @@ function Contact() {
                 <i className="bi bi-telephone-fill me-2" />
                 <a href={`tel:${businessInfo.phone}`}>{businessInfo.phone}</a>
               </p>
-              <p>
-                <i className="bi bi-envelope-fill me-2" />
-                <a href={`mailto:${businessInfo.email}`}>{businessInfo.email}</a>
-              </p>
               <a href={businessInfo.whatsappLink} target="_blank" rel="noreferrer" className="btn door-btn mt-2">
                 WhatsApp Now
               </a>

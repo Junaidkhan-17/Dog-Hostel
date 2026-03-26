@@ -90,7 +90,7 @@
 /* Button Styles */
 .contact-page .door-btn {
   background-color: var(--primary-color);
-  color: rgb(255, 255, 255);
+  color: white;
   border: none;
   padding: 12px 25px;
   font-weight: 600;
@@ -100,7 +100,7 @@
 
 .contact-page .door-btn:hover {
   background-color: #f7a400;
-  color: white;
+
   box-shadow: 0 5px 15px rgba(247, 164, 0, 0.4);
   transform: scale(1.02);
 }
