@@ -1,0 +1,21 @@
+.loader-wrap {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: radial-gradient(circle at top left, #2a2a2a, #111111 55%);
+}
+
+.paw-loader {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 8px solid rgba(255, 255, 255, 0.2);
+  border-top-color: var(--accent);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

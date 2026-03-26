@@ -1,0 +1,167 @@
+/* Contact.css */
+
+:root {
+  --primary-color: #f7a400; /* Warm Orange/Yellow */
+  --secondary-color: #4a5568; /* Dark Grey/Blue for text */
+  --accent-color: #25d366; /* WhatsApp Green */
+  --light-bg: #fffbf2; /* Very light cream background */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+.contact-page {
+  background-color: var(--light-bg);
+  color: var(--secondary-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-page .text-muted {
+  color: #718096 !important;
+}
+
+/* Glassmorphism Card Style */
+.contact-page .glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.contact-page .glass-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-form-wrap {
+  background: white;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 30px;
+}
+
+.contact-page h4 {
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.contact-page h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+/* Contact Info Styling */
+.contact-page .glass-card p {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.contact-page .glass-card i {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  width: 30px;
+}
+
+.contact-page .glass-card a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: color 0.2s;
+}
+
+.contact-page .glass-card a:hover {
+  color: var(--primary-color);
+}
+
+/* Button Styles */
+.contact-page .door-btn {
+  background-color: var(--primary-color);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 12px 25px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.contact-page .door-btn:hover {
+  background-color: #f7a400;
+  color: white;
+  box-shadow: 0 5px 15px rgba(247, 164, 0, 0.4);
+  transform: scale(1.02);
+}
+
+/* Form Styles */
+.form-control {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  background-color: #f9fafb;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(247, 164, 0, 0.2);
+}
+
+.form-label {
+  font-weight: 500;
+  color: #4a5568;
+}
+
+/* Map Style */
+.ratio {
+  border-radius: 15px;
+  border: 4px solid white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* WhatsApp Specific Button */
+.btn[href*="wa.me"] {
+  background-color: var(--accent-color);
+}
+.btn[href*="wa.me"]:hover {
+  background-color: #20b358;
+}
+
+@media (max-width: 991px) {
+  .contact-page {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  .contact-page .glass-card p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-page .glass-card,
+  .contact-page .contact-form-wrap {
+    padding: 1rem !important;
+    border-radius: 14px;
+  }
+
+  .contact-page .form-control {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .contact-page .door-btn {
+    padding: 11px 18px;
+  }
+}

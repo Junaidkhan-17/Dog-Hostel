@@ -1,0 +1,50 @@
+.choose-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.choose-list li {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 1.02rem;
+}
+
+.choose-list i {
+  color: var(--accent);
+}
+
+.choose-image {
+  width: 100%;
+  max-width: 430px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 18px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+}
+
+.why h2 {
+  font-size: clamp(1.8rem, 2vw + 1.2rem, 2.8rem);
+  font-weight: 700;
+  color: var(--primary);
+}
+
+@media (max-width: 991px) {
+  .why {
+    text-align: center;
+  }
+
+  .choose-list li {
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .choose-image {
+    max-width: 320px;
+  }
+
+  .choose-list li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,115 @@
+/* ===== NAVBAR BASE ===== */
+.custom-navbar {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s ease;
+  padding: 8px 0;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  width: 50px;
+  height: auto;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* ===== NAV LINKS ===== */
+.custom-navbar .nav-link {
+  position: relative;
+  color: #fff !important;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.custom-navbar .nav-link:hover {
+  color: #00ffcc !important;
+}
+
+/* Active Link */
+.custom-navbar .nav-link.active {
+  color: #00ffcc !important;
+  font-weight: 600;
+}
+
+/* Underline Animation */
+.custom-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, #00ffcc, #00c6ff);
+  transition: 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover::after,
+.custom-navbar .nav-link.active::after {
+  width: 100%;
+}
+
+/* ===== CALL BUTTON ===== */
+.custom-navbar .door-btn {
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 25px;
+  transition: 0.4s ease;
+  box-shadow: 0 5px 15px rgba(255, 81, 47, 0.4);
+}
+
+.custom-navbar .door-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  box-shadow: 0 10px 25px rgba(255, 81, 47, 0.6);
+}
+
+/* ===== TOGGLER ===== */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* ===== MOBILE MENU ===== */
+@media (max-width: 991px) {
+  .custom-navbar .navbar-collapse {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 14px;
+    border-radius: 12px;
+    margin-top: 10px;
+  }
+
+  .custom-navbar .nav-link {
+    padding: 10px 12px;
+  }
+
+  .custom-navbar .door-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .logo {
+    width: 44px;
+  }
+}
+
+/* ===== SCROLL EFFECT (OPTIONAL JS SUPPORT) ===== */
+.custom-navbar.scrolled {
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}

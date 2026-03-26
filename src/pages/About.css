@@ -1,0 +1,129 @@
+.about-page ul {
+  padding-left: 1.1rem;
+}
+
+.about-page h1 {
+  font-size: clamp(1.6rem, 1rem + 1.8vw, 2.4rem);
+}
+
+.text-center h1{
+  font-weight: 700;
+}
+
+.legal-card,
+.timeline-card {
+  border-radius: 16px;
+  background: linear-gradient(
+    90deg,
+    rgba(163, 206, 255, 0.666),
+    rgba(249, 252, 255, 0.567),
+    rgb(128, 187, 255)
+  );
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.docs-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: visible;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.35s ease;
+  z-index: 1;
+}
+
+.docs-thumb-image {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.35s ease;
+}
+
+.docs-card h6 {
+  margin: 0;
+  padding: 0.7rem 0.8rem;
+  background: #fff;
+  text-align: center;
+}
+
+.docs-card:hover,
+.docs-card:focus-within {
+  box-shadow: 0 24px 45px rgba(0, 0, 0, 0.32);
+  z-index: 5;
+}
+
+.docs-card:hover .docs-thumb-image {
+  transform: scale(1.1);
+  filter: brightness(1.05);
+}
+
+.docs-popup-preview {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.28s ease, visibility 0.28s ease;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.docs-popup-image {
+  width: auto;
+  height: 550px;
+  max-width: 96vw;
+  max-height: 96vh;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 28px 64px rgba(0, 0, 0, 0.42);
+}
+
+.docs-card:hover .docs-popup-preview,
+.docs-card:focus-within .docs-popup-preview {
+  opacity: 1;
+  visibility: visible;
+}
+
+.about-page .glass-card h1 {
+  font-weight: 700;
+}
+
+.legal-card h1 {
+  font-weight: 700;
+}
+
+.timeline-card h1 {
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  .docs-thumb-image {
+    height: 210px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-page {
+    text-align: center;
+  }
+
+  .about-page ul {
+    text-align: left;
+  }
+
+  .docs-thumb-image {
+    height: 180px;
+  }
+
+  .about-page .glass-card,
+  .about-page .legal-card,
+  .about-page .timeline-card {
+    padding: 1.1rem !important;
+  }
+}

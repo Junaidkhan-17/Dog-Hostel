@@ -1,0 +1,16 @@
+.cta-banner {
+  border-radius: 20px;
+  padding: 46px 24px;
+  background: linear-gradient(120deg, #111111, #2a2a2a);
+}
+
+@media (max-width: 767px) {
+  .cta-banner {
+    border-radius: 16px;
+    padding: 30px 16px;
+  }
+
+  .cta-banner h3 {
+    font-size: 1.35rem;
+  }
+}

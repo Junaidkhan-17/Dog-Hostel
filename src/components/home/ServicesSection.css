@@ -1,0 +1,9 @@
+.section-title-wrap h2 {
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .section-title-wrap {
+    margin-bottom: 2rem !important;
+  }
+}

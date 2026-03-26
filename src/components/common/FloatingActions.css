@@ -1,0 +1,43 @@
+.whatsapp-float {
+  position: fixed;
+  right: 16px;
+  bottom: 70px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  display: grid;
+  place-content: center;
+  font-size: 1.4rem;
+  z-index: 999;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.mobile-call-btn {
+  display: none;
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: 10px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 11px;
+  z-index: 999;
+}
+
+@media (max-width: 767px) {
+  .mobile-call-btn {
+    display: block;
+    bottom: calc(10px + env(safe-area-inset-bottom));
+  }
+
+  .whatsapp-float {
+    bottom: calc(64px + env(safe-area-inset-bottom));
+  }
+}
