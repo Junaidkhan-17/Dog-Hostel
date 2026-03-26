@@ -26,8 +26,7 @@ export const businessInfo = {
   type: "Dog Hostel & Pet Care Service",
   organization: "Proprietary (Self-Owned)",
   sector: "Private",
-  phone: "9450766253",
-  email: "rsedmake@gmail.com",
+  phone: "7020482081",
   address:
     "Opposite Yadav Lawn, Abdul Hamid Nagar, Gorewada, Katol Road, Nagpur - 440013",
   established: "11/11/2021",
@@ -35,7 +34,7 @@ export const businessInfo = {
   employees: "9 (5 Men, 4 Women)",
   registeredUnder: "Maharashtra Shops & Establishments Act",
   authority: "Office of Additional Commissioner of Labour, Nagpur",
-  whatsappLink: "https://wa.me/919450766253"
+  whatsappLink: "https://wa.me/+917020482081"
 };
 
 export const services = [

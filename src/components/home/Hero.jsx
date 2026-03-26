@@ -17,6 +17,8 @@ function Hero() {
             <span className="hero-badge">Trusted Pet Care Since {businessInfo.established}</span>
             <h1 className="display-5 fw-bold mt-3">Dog Hostel & Pet Care in Nagpur</h1>
             <p className="lead mb-4">Safe • Trusted • Professional Pet Care</p>
+            <p className="lead mb-4 fw-bold mt-3">Heading out of town? Don’t let pet worries hold you back.
+              At Purvi Pets, we care for your furry family like our own — safe, loving, and reliable.</p>
             <div className="d-flex flex-wrap gap-3">
               <Link to="/contact" className="btn door-btn btn-lg">
                 Book Now
